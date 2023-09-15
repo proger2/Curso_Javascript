@@ -120,15 +120,24 @@ class App{
         else{
             alert("Para desintalar debe cerrar la aplicación")
         }
-    }
-    
-    
+    }    
 }
 
 fifa23 = new App(194500,5,"2gb");
-fifa23.abrir()
-fifa23.instalar()
-fifa23.abrir()
-fifa23.desintalar()
-fifa23.cerrar()
-fifa23.desintalar()
+//fifa23.abrir()
+//fifa23.instalar()
+//fifa23.abrir()
+//fifa23.desintalar()
+//fifa23.cerrar()
+//fifa23.desintalar()
+fifa18 = new App(230000,4,"1,9gb")
+cs = new App(100000,4,"1,5gb")
+alert(fifa23.descargas)
+
+const apps = [fifa18.descargas,fifa23.descargas,cs.descargas] 
+function comparar (){
+    let mayor = Math.max(apps)
+    return (`La app con mayor descargas es:${mayor}`)
+}
+
+document.write(comparar())
